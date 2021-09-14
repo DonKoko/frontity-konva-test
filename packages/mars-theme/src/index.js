@@ -2,6 +2,7 @@ import Theme from "./components";
 import image from "@frontity/html2react/processors/image";
 import iframe from "@frontity/html2react/processors/iframe";
 import link from "@frontity/html2react/processors/link";
+import KonvaTest from './components/konva-test'
 
 const marsTheme = {
   name: "@frontity/mars-theme",
@@ -43,6 +44,9 @@ const marsTheme = {
     },
   },
   libraries: {
+    components: {
+      KonvaTest,
+    },
     html2react: {
       /**
        * Add a processor to `html2react` so it processes the `<img>` tags
